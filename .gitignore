@@ -19,11 +19,8 @@ outputs/
 **/evals/*.scores.json
 **/evals/review_pack*/
 
-# Experiments still under development: keep local, never stage
-/exp02_sar_summarizer/
-/exp03_admet_ecotox_triage/
-/exp04_reaction_cleanup/
-/exp05_moa_hypothesis/
+# Local-only experiments
+/private-experiments/
 
 # Internal decisions and operational handover material
 /internal/

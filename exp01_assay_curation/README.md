@@ -16,7 +16,7 @@ Normalize raw activity rows plus assay descriptions into a schema fit for QSAR a
 
 ## Data and split
 
-Use ChEMBL/PubChem-derived records. Hold out entire `assay_chembl_id` values, never random rows. Initial source data are fetched from ChEMBL hERG/KCNH2 target `CHEMBL240`.
+Use ChEMBL-derived records. Hold out complete assay identifiers, never random activity rows. The supplied retrieval script targets the ChEMBL hERG/KCNH2 target CHEMBL240.
 
 ## Output and evaluation
 
