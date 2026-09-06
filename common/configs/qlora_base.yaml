@@ -1,0 +1,13 @@
+model_name: Qwen/Qwen2.5-7B-Instruct
+sequence_length: 2048
+micro_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 0.0002
+epochs: 2
+warmup_ratio: 0.03
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+packing: false
+report_to: none

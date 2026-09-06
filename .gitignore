@@ -1,0 +1,29 @@
+# Python and local environments
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Generated data, models, outputs, and local review material
+adapters/
+logs/
+outputs/
+**/data/raw/**
+**/data/interim/**
+**/data/processed/**
+!**/data/**/
+!**/data/**/.gitkeep
+**/evals/*.jsonl
+**/evals/*.metadata.json
+**/evals/*.scores.json
+**/evals/review_pack*/
+
+# Experiments still under development: keep local, never stage
+/exp02_sar_summarizer/
+/exp03_admet_ecotox_triage/
+/exp04_reaction_cleanup/
+/exp05_moa_hypothesis/
+
+# Internal decisions and operational handover material
+/internal/

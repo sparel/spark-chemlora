@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spark-chemlora"
+version = "0.1.0"
+description = "Bounded LoRA/QLoRA R&D workflow experiments"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6", "pydantic>=2", "pandas>=2", "pyarrow>=15", "requests>=2.31"]
+
+[project.optional-dependencies]
+train = ["torch", "transformers>=4.48", "datasets>=3", "accelerate", "peft", "trl", "bitsandbytes"]
+chem = ["rdkit"]
+
+[tool.setuptools]
+packages = []
+
+[tool.ruff]
+line-length = 100
