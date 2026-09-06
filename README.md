@@ -9,13 +9,12 @@ LLMs extract, normalize, summarize, and explain supplied evidence. Deterministic
 ## Experiments
 
 - `exp01_assay_curation/`: normalize hERG/ChEMBL assay and activity records into a constrained JSON evidence card.
-Future experiments are maintained locally until their protocols, data provenance, and evaluation gates are complete.
 
 ## What this repository contains
 
 Source code, configuration, tests, schemas, and documentation. It intentionally excludes raw and processed data, model weights, adapters, run logs, review packs, and full inference outputs. Fetch/build scripts let users reproduce public-data preparation subject to upstream licences.
 
-Read [LICENSE](LICENSE), [NOTICE](NOTICE), and [SECURITY.md](SECURITY.md) before use.
+Read [LICENSE](LICENSE), [NOTICE](NOTICE), [DATA_LICENSE.md](DATA_LICENSE.md), and [DATA_PROVENANCE.md](DATA_PROVENANCE.md) before use.
 
 ## Quick start
 
@@ -27,7 +26,7 @@ python -m unittest discover -s common/tests
 python -m unittest discover -s exp01_assay_curation/tests
 ```
 
-To build the hERG corpus, fetch ChEMBL data first and review the generated records before training. Configure a base model through a local path or a Hugging Face model ID. Do not commit local paths, data, adapters, or credentials.
+To build the hERG corpus, fetch ChEMBL data first and review the generated records before training. Configure a base model through a local path or a Hugging Face model ID.
 
 ## hERG experiment: safety boundary
 
